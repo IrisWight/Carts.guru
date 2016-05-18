@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="828" height="322" viewBox="0 0 828 322">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #948e88;
+      }
+
+      .cls-3 {
+        fill: #be2026;
+      }
+
+      .cls-4 {
+        fill: #000;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect y="25" width="163" height="113" class="cls-1"/>
+    <rect x="214" y="54" width="262" height="18" class="cls-2"/>
+    <rect x="676" y="54" width="68" height="18" class="cls-3"/>
+    <rect x="676" y="215" width="68" height="18" class="cls-3"/>
+    <rect x="806" y="54" width="22" height="18" class="cls-2"/>
+    <rect x="806" y="215" width="22" height="18" class="cls-2"/>
+    <rect x="214" y="92" width="286" height="18" class="cls-2"/>
+    <rect y="160" width="828" height="3" class="cls-4"/>
+    <rect y="186" width="163" height="113" class="cls-1"/>
+    <rect x="214" y="215" width="405" height="18" class="cls-2"/>
+    <rect x="214" y="253" width="286" height="18" class="cls-2"/>
+    <rect y="319" width="828" height="3" class="cls-4"/>
+    <rect width="828" height="3" class="cls-4"/>
+  </g>
+</svg>

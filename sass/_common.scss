@@ -1,0 +1,507 @@
+@import "base";
+@import "compass";
+
+// SHORT HOWTO
+// =======Sprites
+// .whatever{
+// 	@include sized-sprite($icons, badge_hit);
+// 	@include retina{
+// 		@include sized-sprite($icons, badge_new);
+// 	}
+// }
+// =======animation example
+// @include keyframes(rotate) {
+//    from {
+//       @include rotate(0);
+//    }
+//    to {
+//       @include rotate(360);
+//    }
+// }
+// =======animation usage
+// body:hover{
+// 	@include animation(rotate 200s linear infinite);
+// }
+// =======gradient example
+// body{
+// @include background-image(linear-gradient(#232323, #5c5c5c));
+// }
+// =======making bw-images
+// img{@extend %gray;}
+// BTW these comments will not render into css
+
+/* --------------- reset.css --------------- */
+
+// @font-face {
+// 	font-family: "FixFont";
+// 	src: url();
+// }
+
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: #666;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, td img {
+  vertical-align: top;
+}
+
+input, select, button, textarea {
+  margin: 0;
+  font-size: 100%;
+  color: #666;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* --------------- /reset.css --------------- */
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+label, input[type="button"], input[type="submit"], button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+//    VAR
+
+$MS_ProximaNova_L: proxima_novalight, Arial, sans-serif;
+$MS_ProximaNova_B: proxima_novabold, Arial, sans-serif;
+$MS_ProximaNova_SB: proxima_novasemibold, Arial, sans-serif;
+
+$white: #fff;
+$gray-text: #333333;
+$gray-dots: #757c7f;
+$red-text: #f7323f;
+$green: #3d9b46;
+$blue-bg1: #d8f3ff;
+$blue-text: #197cd9;
+$orange-text: #fe7201;
+
+$pink-text: #e661d2;
+$lblue-text: #7eb5e9;
+$green-text: #9ee63c;
+$purpur-text: #73749a;
+
+
+.bg-gradient-layout{
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-gradient{
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+//bg-1
+.gradient_first{
+  background: linear-gradient(to bottom, rgba(216,243,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+//bg-1_transition
+.gradient_first_transition{
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(177,204,219,1) 100%);
+}
+
+
+//bg-2
+.gradient_second{
+  background: linear-gradient(to bottom, rgba(177,204,219,1) 0%, rgba(212,228,236,1) 100%);
+}
+//bg-2_transition
+.gradient_second_transition{
+  background: linear-gradient(to bottom, rgba(212,228,236,1) 0%, rgba(154,181,198,1) 100%);
+}
+
+
+//bg-3
+.gradient_four{
+  background: linear-gradient(to bottom, rgba(154,181,198,1) 0%, rgba(198,215,223,1) 100%);
+}
+//bg-3_transition
+.gradient_four_transition{
+  background: linear-gradient(to bottom, rgba(198,215,223,1) 0%, rgba(30,60,84,1) 100%);
+}
+
+//bg-4
+.gradient_five{
+  background: linear-gradient(to bottom, rgba(30,60,84,1) 14%, rgba(84,122,145,1) 100%);
+}
+//bg-4
+.gradient_five_end{
+  background: rgba(84,122,145,1);
+}
+
+
+//  tegs
+
+body {
+  font: 300 26px/1.6 $MS_ProximaNova_L;
+}
+
+/* Typography */
+
+p{
+  font: 26px/36px $MS_ProximaNova_L;
+  color: #000;
+  @media only screen and (max-width: 1680px){
+	font: 22px/28px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 1100px) {
+	font: 18px/24px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 550px) {
+	font: 10px/14px $MS_ProximaNova_L;
+  }
+}
+
+h1 {
+  font: 80px/94px $MS_ProximaNova_L;
+  @media only screen and (max-width: 1860px){
+	font: 70px/84px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 1680px){
+	font: 50px/55px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 1100px) {
+	font: 40px/40px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 550px) {
+	font: 20px/20px $MS_ProximaNova_L;
+  }
+}
+
+h2 {
+  font: 400 60px/76px $MS_ProximaNova_L;
+  @media only screen and (max-width: 1500px){
+	font: 48px/54px $MS_ProximaNova_L;
+  }
+}
+
+h3 {
+  font: 48px/58px $MS_ProximaNova_L;
+  @media only screen and (max-width: 1550px){
+	font: 35px/40px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 1400px){
+	font: 35px/40px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 700px){
+	font: 28px/35px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 600px){
+	font: 16px/20px $MS_ProximaNova_L;
+  }
+}
+
+h4 {
+  font: 36px/40px $MS_ProximaNova_L;
+  @media only screen and (max-width: 1500px){
+	font: 30px/30px $MS_ProximaNova_L;
+  }
+  @media only screen and (max-width: 1350px){
+	font: 25px/30px $MS_ProximaNova_L;
+  }
+}
+
+
+/* Glow */
+
+.glow {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.glow:hover {
+  box-shadow: 0 0 8px rgba(209, 209, 209, 0.6);
+}
+
+
+//      ANIMATIONS
+
+@include keyframes(guru-fly) {
+  0%,100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+}
+
+@include keyframes(fly-left) {
+  0% {
+    right: -30%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@include keyframes(fly-right) {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@include keyframes(call) {
+  0% {
+	top: 6%;
+	left: 50%;
+  }
+  50% {
+	top: 9%;
+	left: 48%;
+  }
+  100% {
+	top: 6%;
+	left: 50%;
+  }
+}
+
+@include keyframes(reports) {
+  0% {
+	top: 50%;
+	right: 0;
+  }
+  50% {
+	top: 47%;
+	right: 2%;
+  }
+  100% {
+	top: 50%;
+	right: 0;
+  }
+}
+
+@include keyframes(sms) {
+  0%,100% {
+	bottom: -15%;
+	left: 50%;
+  }
+  50% {
+	bottom: -12%;
+	left: 52%;
+  }
+}
+
+@include keyframes(scenarios) {
+  0% {
+	top: 50%;
+	left: 0;
+  }
+  50% {
+	top: 53%;
+	left: 2%;
+  }
+  100% {
+	top: 50%;
+	left: 0;
+  }
+}
+
+// OBJ
+
+@include keyframes(bag) {
+  0% {
+    right: 15%;
+    top: -50%;
+  }
+  100% {
+    top: 85%;
+    right: 34%;
+  }
+}
+
+@include keyframes(fruit) {
+  0% {
+    right: 62%;
+    top: -50%;
+  }
+  100% {
+    top: 85%;
+    right: 34%;
+  }
+}
+
+@include keyframes(camera) {
+  0% {
+    right: 48%;
+    top: -50%;
+  }
+  100% {
+    top: 85%;
+    right: 34%;
+  }
+}
+
+@include keyframes(t-shirt) {
+  0% {
+    right: 26%;
+    top: -50%;
+  }
+  100% {
+    top: 85%;
+    right: 34%;
+  }
+}
+
+@include keyframes(card) {
+  0% {
+    right: 4%;
+    top: -50%;
+  }
+  100% {
+    top: 85%;
+    right: 34%;
+  }
+}
+
+@include keyframes(dress) {
+  0% {
+    right: 34%;
+    top: -50%;
+  }
+  100% {
+    top: 85%;
+    right: 34%;
+  }
+}
+
+@include keyframes(ball) {
+  0% {
+    left: 13%;
+    top: -11%;
+  }
+  50% {
+    left: 30%;
+    top: -18%;
+  }
+  100% {
+    left: 50%;
+    top: 15%;
+  }
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  @include transition(all 0.3s linear);
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  /*here should be styles*/
+  @include transition(all 0.3s linear);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+
+
+//     LANG-SELECT
+
+.select2-container{
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+

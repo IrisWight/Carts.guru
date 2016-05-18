@@ -1,0 +1,350 @@
+@import "base";
+@import "fonts";
+
+header.white {
+  .main-menu ul li a { color: #fff; }
+  .header-lang > span{ color: #fff; }
+  .logo {
+	.logo_img_black { fill: #FFF; }
+	.logo_text { fill: #FFF; }
+  }
+  .main-menu > ul > li > a:after{ background: #fff;}
+  .header-lang .select2-container .select2-choice .select2-arrow b{border-top: 3px solid #fff;}
+}
+.wrapper.products ~ #fp-nav.right{ right: 5%;}
+.wrapper.products section{ overflow: hidden;}
+
+.sec__inner{ position: relative; display: block; width: 100%;max-width: 1300px; margin: 0 auto;
+  font-size: 0; z-index: 2;}
+.sec__back{ position: absolute; display: block; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;
+  img{ display: block; margin: 0;max-width: 100%;}
+  .airplane_left{width: 10%;position: absolute;bottom: 20%;left: 0;}
+  .airplane_right{width: 14%;position: absolute;top: 15%;right: 0;}
+  .hand-left{ position: absolute; display: block; bottom: -7%; left: -9%; width: 20%; }
+  .hand-center{ position: absolute; display: block; bottom: -20%; left: 50%; width: 19%; }
+  .hand-right{ position: absolute; display: block; bottom: -8%; right: -3%; width: 14%; }
+  .callback-hand{position: absolute; display: block; bottom: -8%; right: -3%; width: 29%; }
+  .mess-icon1{position: absolute; display: block; bottom: 4%; left: -7%; width: 22%; }
+  .mess-icon2{position: absolute; display: block; top: -4%; right: -4%; width: 12.6%; }
+  .analytic-bg{position: absolute; display: block; width: 100%; height: 100%; top: 0; left: 0;
+	background: url("../img/svg/stars.svg") 50% 50% no-repeat; -webkit-background-size: cover; background-size: cover;
+  }
+  .integr-bg{position: absolute; display: block; width: 100%; height: 100%; top: 0; left: 0;
+	background: url("../img/products/clouds-1_3.svg") 50% 50% no-repeat; -webkit-background-size: cover; background-size: cover;
+  }
+}
+
+.sec__half{ position: relative; display: inline-block; vertical-align: top; width: 50%;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.sec__left{ padding-right: 25px;}
+.sec__right{ padding-left: 35px;}
+
+/* 1 */
+.sec__scenarios{ color: #080808;
+  .sec__left{ padding-top: 130px;}
+  .sec__right{ padding-top: 212px;
+	> img{ margin-left: -10px;}
+  }
+  .sec__half__info{ color: $orange-text;}
+  .sec__left__btn{
+	a.button,button{ background: $orange-text;}
+	span{color: #080808;}
+	i{color: #080808;}
+  }
+  .sec__half__ico { width: 92px; height: 120px; top: -70px; right: -120px;
+	background: url('../img/products/scen-ico.svg') 50% 50% no-repeat;
+	-webkit-background-size: contain; background-size: contain;}
+}
+/* 2 */
+.sec__call{ color: #080808;
+  .sec__left{ }
+  .sec__right{ padding-top: 140px; padding-left: 50px;}
+  .sec__half__title{ padding-left: 150px;}
+  .sec__half__info{ padding-left: 150px; color: $pink-text;}
+  .sec__left__btn{
+	a.button,button{ background: $pink-text;}
+	span{color: #080808;}
+	i{color: #080808;}
+  }
+  .sec__half__ico { width: 120px; height: 120px; top: 0; left: 0;
+	background: url('../img/products/call-ico.svg') 50% 50% no-repeat;
+	-webkit-background-size: contain; background-size: contain;}
+}
+/* 3 */
+.sec__callback{ color: #fff;
+  .sec__left{ width: 75%; padding-top: 125px;}
+  .sec__right{ width: 25%;}
+  .sec__half__title{ max-width: 570px;}
+  .sec__half__info{ color: $lblue-text;}
+  .sec__left__btn{
+	a.button,button{ background: $lblue-text;}
+	span{color: #fff;}
+	i{color: #fff;
+	  a{ color: #fff;
+		&:after{ background: #fff;}
+	  }
+	}
+  }
+  .sec__half__ico { width: 145px; height: 120px; top: -75px; right: -100px;
+	background: url('../img/products/callback-ico.svg') 50% 50% no-repeat;
+	-webkit-background-size: contain; background-size: contain;}
+}
+/* 4 */
+.sec__messages{ color: #fff;
+  .sec__left{ padding-top: 50px;}
+  .sec__right{ padding-top: 160px; padding-left: 55px;}
+  .sec__half__title{ padding-left: 150px;}
+  .sec__left__bot{ padding-left: 150px;}
+  .sec__half__info{ padding-left: 150px; color: $orange-text;}
+  .sec__left__btn{ min-width: 565px; margin-top: 100px;
+	a.button,button{ background: $orange-text;}
+	span{color: #fff;}
+	i{color: #fff;
+	  a{ color: #fff;
+		&:after{ background: #fff;}
+	  }
+	}
+  }
+  .sec__half__ico { width: 106px; height: 106px; top: 12px; left: 0;
+	background: url('../img/products/message-ico.svg') 50% 50% no-repeat;
+	-webkit-background-size: contain; background-size: contain;}
+}
+/* 5 */
+.sec__analitics{color: #fff;
+  .sec__left{ padding-top: 100px;}
+  .sec__right{ padding-top: 175px; padding-left: 50px;}
+  .sec__half__title{ padding-left: 145px;}
+  .sec__half__info{ padding-left: 145px; color: $green-text;}
+  .sec__left__btn{
+	a.button,button{ background: $green-text;}
+	span{color: #fff;}
+	i{color: #fff;
+	  a{ color: #fff;
+		&:after{ background: #fff;}
+	  }
+	}
+  }
+  .sec__half__ico { width: 112px; height: 136px; top: 10px; left: 0;
+	background: url('../img/products/analytics-ico.svg') 50% 50% no-repeat;
+	-webkit-background-size: contain; background-size: contain;}
+}
+/* 6 */
+.sec__integration{color: #080808;
+  .sec__left{ padding-top: 80px;}
+  .sec__right{ padding-top: 80px; padding-left: 100px;}
+  .sec__half__title{ padding-left: 170px;}
+  .sec__half__info{ padding-left: 170px; color: $purpur-text; padding-bottom: 60px;}
+  .sec__left__btn{
+	a.button,button{ background: $purpur-text;}
+	span{color: #080808;}
+	i{color: #080808;}
+  }
+  .sec__half__ico { width: 132px; height: 110px; top: 10px; left: 0;
+	background: url('../img/products/integrat-ico.svg') 50% 50% no-repeat;
+	-webkit-background-size: contain; background-size: contain;}
+}
+
+
+
+.sec__half__title{ position: relative; display: inline-block;
+  font-size: 76px; line-height: 80px; color: inherit;}
+.sec__half__ico{ position: absolute; display: block; top: 0; right: 0;}
+.sec__half__info{ position: relative; display: block; padding-bottom: 25px;
+  font: 26px/32px $MS_ProximaNova_L;}
+.sec__left__text{
+  ul{ position: relative; display: block; padding: 0; list-style: none;
+	li{ position: relative; display: block; height: 35px; padding-left: 45px; padding-bottom: 15px;
+	  font-size: 16px; line-height: 20px; color: #080808; opacity: .7;
+	  i{ position: absolute; display: block; width: 26px; height: 20px; top: 0; left: 5px;
+		background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: contain; background-size: contain;
+		&.ictim{ background-image: url('../img/products/ictim.svg');}
+		&.icamo{ background-image: url('../img/products/icamo.svg');}
+		&.icpay{ background-image: url('../img/products/icpay.svg');}
+		&.icvis{ background-image: url('../img/products/icvis.svg');}
+		&.icprd{ background-image: url('../img/products/icprd.svg');}
+		&.icoth{ background-image: url('../img/products/icoth.svg');}
+	  }
+	}
+  }
+}
+
+.p-big{ position: relative; display: block; margin: 0 0 30px;
+  font-size: 24px; line-height: 32px; color: inherit;}
+.p-small{ position: relative; display: block; margin: 0 0 25px;
+  font-size: 18px; line-height: 26px; color: inherit;}
+
+.sec__left__btn{ margin-top: 50px;
+  .left__btn{ position: relative; display: inline-block; vertical-align: top;}
+  a.button,button{ position: relative; display: inline-block; vertical-align: middle;
+	background: none; border: none; width: 180px; height: 72px; padding: 21px 0;
+	font: 28px/30px $MS_ProximaNova_L; color: #fff; text-align: center;
+	-webkit-border-radius: 36px; -moz-border-radius: 36px; border-radius: 36px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  }
+  span{ position: relative; display: inline-block; vertical-align: top; margin-left: 15px;
+	padding: 22px 0;
+	font: 24px/28px $MS_ProximaNova_L; color: #080808;}
+  i{ position: relative; display: block; padding-left: 20px;
+	font: 18px/45px $MS_ProximaNova_L; color: #080808;
+	a{ position: relative; display: inline-block; vertical-align: middle;
+	  color: $green; line-height: 24px;
+	  &:after{ content: ''; position: absolute; display: block; width: 100%; height: 1px;
+		background: $green; left: 0; bottom: 2px; opacity: .5;
+		-webkit-transition: all .25s ease; -moz-transition: all .25s ease; transition: all .25s ease;}
+	  &:hover:after{ bottom: -2px; opacity: 0;}
+	}
+  }
+}
+
+.integr-wrap{ position: relative; display: block; font-size: 0;
+  .integr-one{ position: relative; display: inline-block; vertical-align: top;
+	margin: 40px 0; width: 50%; text-align: center;}
+}
+
+@media only screen and (max-height: 1080px), only screen and (max-width: 1920px){
+  .sec__back .airplane_left {bottom: 3%;}
+  .sec__back .hand-left {bottom: -10%;left: -11%;}
+  .sec__back .hand-center {bottom: -21%;}
+}
+
+@media only screen and (max-height: 800px), only screen and (max-width: 1440px) {
+  .header{ padding-top: 25px;}
+  .wrapper.products section{ padding: 0 55px;}
+  .wrapper.products ~ #fp-nav.right {right: 2%;}
+  .sec__left{ width: 57.5%;}
+  .sec__right{ width: 42.5%; padding-right: 35px;}
+  .sec__scenarios .sec__half__info{ max-width: 540px;}
+  .sec__integration .sec__right{ padding-left: 40px;}
+  .sec__call .sec__right{ padding-top: 125px;}
+  .sec__scenarios .sec__right {padding-top: 160px;}
+  .integr-wrap .integr-one{ width: 48%;}
+  .sec__half__title{ font-size: 72px; line-height: 76px;}
+  .sec__half__info{ font-size: 24px; line-height: 28px; padding-bottom: 20px;}
+  .sec__scenarios .sec__half__ico{ height: 90px; top: -30px; width: 70px; right: -90px;}
+  .sec__call .sec__half__ico{ width: 90px; height: 90px;}
+  .sec__callback .sec__half__ico {width: 110px;height: 90px;top: -50px;right: -110px;}
+  .sec__back .airplane_left{ bottom: 5%;}
+  .sec__back .hand-left {bottom: -23%;left: -10%;}
+  .sec__messages .sec__half__ico {width: 90px;height: 90px;}
+  .sec__analitics .sec__half__ico {width: 85px;height: 100px;}
+  .sec__integration .sec__half__ico {width: 95px;height: 80px;}
+  .sec__messages .sec__half__title,.sec__messages .sec__half__info,
+  .sec__analitics .sec__half__title,.sec__analitics .sec__half__info,
+  .sec__integration .sec__half__title,.sec__integration .sec__half__info,
+  .sec__call .sec__half__title,.sec__call .sec__half__info,
+  .sec__messages .sec__left__bot{ padding-left: 110px;}
+  .sec__scenarios .sec__left{ padding-top: 80px;}
+  .sec__integration .sec__half__info{ padding-bottom: 20px;}
+  .sec__left__text ul li{ height: 30px; padding-bottom: 10px;}
+  .sec__left__btn{ margin-top: 30px; }
+  .integr-wrap .integr-one{ margin: 25px 0;}
+  .sec__messages .sec__left__btn{ margin-top: 50px;}
+  .p-big{ margin-bottom: 20px; font-size: 21px; line-height: 28px;}
+  .p-small {margin-bottom: 15px;font-size: 16px;line-height: 24px;}
+}
+
+
+@media only screen and (max-height: 630px), only screen and (max-width: 1220px) {
+  body.not-full{
+	.section{ position: relative;padding: 55px 50px;
+	  &.sec__scenarios{ background: #d0f5ff;}
+	  &.sec__call{ background: #ffeb62;}
+	  &.sec__callback{ background: #60205a;}
+	  &.sec__messages{ background: #191b34;}
+	  &.sec__analitics{ background: #244058;}
+	  &.sec__integration{ background: #f6f6f6;}
+	}
+	.sec__callback .sec__half__ico {top: -50px;right: -100px;}
+  }
+  @media only screen and (max-width: 960px) {
+	.sec__half__title{ font-size: 48px; line-height: 52px;}
+	.sec__scenarios .sec__half__ico{height: 60px;top: -20px;width: 50px;right: -60px;}
+	.sec__call .sec__half__ico{ width: 60px; height: 60px;}
+	.sec__callback .sec__half__ico {width: 80px;height: 70px;top: -50px;right: -100px;}
+	.sec__messages .sec__half__ico {width: 65px;height: 65px;}
+	.sec__analitics .sec__half__ico {width: 60px;height: 75px;}
+	.sec__integration .sec__half__ico {width: 70px;height: 58px;}
+	.sec__messages .sec__half__title,.sec__messages .sec__half__info,
+	.sec__analitics .sec__half__title,.sec__analitics .sec__half__info,
+	.sec__integration .sec__half__title,.sec__integration .sec__half__info,
+	.sec__call .sec__half__title,.sec__call .sec__half__info,
+	.sec__messages .sec__left__bot{ padding-left: 80px;}
+	.sec__analitics .sec__left,
+	.sec__integration .sec__left,
+	.sec__messages .sec__left{ padding-top: 0;}
+	.sec__callback .sec__left{padding-top: 30px;}
+	.sec__integration .sec__right{ padding-left: 0; padding-right: 0;}
+	.sec__integration .sec__right{ padding-top: 75px;}
+	.integr-wrap { text-align: center;
+	  .integr-one { width: 40%; margin: 20px 5%; }
+	}
+	.sec__messages .sec__right {padding-top: 128px;}
+	.sec__messages .sec__left__btn span{ display: block; margin-left: 20px; }
+	.sec__analitics .sec__right{ padding-right: 0; padding-left: 20px; padding-top: 160px;}
+	.sec__call .sec__right,
+	.sec__messages .sec__right{ padding-left: 0;}
+	.sec__scenarios .sec__right {padding-top: 206px;padding-left: 0;}
+	.sec__half__top{ min-width: 520px;}
+	.sec__left__btn {
+	  a.button, button { width: 150px; height: 50px; font-size: 24px; padding: 10px 0; }
+	  span { font-size: 18px; }
+	}
+	.sec__call .sec__right {padding-top: 105px;}
+  }
+  @media only screen and (max-width: 800px) {
+	body.not-full .section { padding: 40px 35px; }
+	.sec__call .sec__right,
+	.sec__scenarios .sec__right,
+	.sec__messages .sec__right{ padding-right: 0;}
+	.sec__left__text ul li{ height: auto;}
+	.p-big {margin-bottom: 15px;font-size: 18px;line-height: 26px;}
+	.sec__messages .sec__left__bot {padding-left: 0;}
+	.sec__messages .sec__left__btn{ margin-top: 20px;}
+	.sec__left__btn { margin-top: 20px;
+	  span { display: block; margin-left: 20px; padding: 0; }
+	}
+
+  }
+  @media only screen and (max-width: 640px) {
+	.sec__half__top{ min-width: 100%;}
+	.sec__left,.sec__right,.sec__callback .sec__left{ width: 100%; padding-right: 0;}
+	.sec__scenarios .sec__right,
+	.sec__call .sec__right,
+	.sec__messages .sec__right,
+	.sec__analitics .sec__right,
+	.sec__integration .sec__right{ padding-left: 0;padding-top: 20px;}
+	body.not-full .section{ padding-left: 25px; padding-right: 25px;}
+	.sec__scenarios .sec__right > img{ margin-left: 0;}
+	.sec__half__title{ font-size: 36px; line-height: 42px;}
+	.sec__callback .sec__half__info,
+	.sec__scenarios .sec__half__title,
+	.sec__scenarios .sec__half__info{ padding-left: 80px;}
+	.sec__callback .sec__half__title{ width: 100%; padding-left: 80px;
+	  .sec__half__ico{ right: auto; left: 0; top: 0; width: 70px;}
+	}
+	.sec__scenarios .sec__half__ico{ left: 0; right: auto; top: 0; width: 60px; height: 70px;}
+  }
+  @media only screen and (max-width: 430px) {
+	.sec__half__info {font-size: 21px;line-height: 24px;padding-bottom: 10px;}
+	body.not-full .section{ padding: 35px 20px;}
+  }
+  @media only screen and (max-width: 380px) {
+	.integr-wrap .integr-one{ width: 25%; margin: 20px 10%;}
+	.sec__scenarios .sec__half__title,
+	.sec__scenarios .sec__half__info,.sec__callback .sec__half__title,
+	.sec__messages .sec__half__title, .sec__messages .sec__half__info,
+	.sec__analitics .sec__half__title, .sec__analitics .sec__half__info,
+	.sec__integration .sec__half__title, .sec__integration .sec__half__info,
+	.sec__call .sec__half__title, .sec__call .sec__half__info{ padding-left: 60px;}
+	.sec__callback .sec__half__info{ padding-left: 0;}
+	.sec__call .sec__half__ico {width: 45px;height: 50px;}
+	.sec__scenarios .sec__half__ico {width: 45px;height: 55px;}
+	.sec__callback .sec__half__title .sec__half__ico,
+	.sec__messages .sec__half__ico{ width: 50px; height: 50px;}
+	.sec__messages .sec__half__ico{ top: 7px;}
+	.sec__analitics .sec__half__ico {width: 50px;height: 60px;top: 0;}
+	.sec__integration .sec__half__ico {width: 50px;height: 45px;top: 5px;}
+  }
+
+}
+
